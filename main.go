@@ -4,12 +4,13 @@ import (
 	// "fmt"
 	// "hello"
 	// "os"
-	"average"
+	//"average"
+	"search_replace"
 )
 
 func main(){
 	// hello := hello.Say(os.Args[1:])
 	// fmt.Println(hello)
-	average.Average()
-
+	// average.Average()
+	search_replace.SearchReplace()
 }

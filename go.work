@@ -2,4 +2,5 @@ go 1.22.5
 
 use ./hello-package
 use ./average-package
+use ./search-replace-package
 use .
