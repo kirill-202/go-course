@@ -1,2 +1,2 @@
 # go-course
-Learning go, coding some programms.
+Learning go, coding some programs.
