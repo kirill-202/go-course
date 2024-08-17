@@ -3,4 +3,6 @@ go 1.22.5
 use ./hello-package
 use ./average-package
 use ./search-replace-package
+use ./word-counter-package
+use ./file-package
 use .

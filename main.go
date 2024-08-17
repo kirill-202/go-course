@@ -5,12 +5,14 @@ import (
 	// "hello"
 	// "os"
 	//"average"
-	"search_replace"
+	//"search_replace"
+	//"word_counter"
+	"filepackage"
 )
 
 func main(){
 	// hello := hello.Say(os.Args[1:])
 	// fmt.Println(hello)
 	// average.Average()
-	search_replace.SearchReplace()
+	filepackage.CountFileUnits()
 }
