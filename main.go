@@ -1,18 +1,12 @@
 package main
 
 import (
-	// "fmt"
-	// "hello"
-	// "os"
-	//"average"
-	//"search_replace"
-	//"word_counter"
-	"filepackage"
+
+	//"filepackage"
+	"page_parser"
 )
 
 func main(){
-	// hello := hello.Say(os.Args[1:])
-	// fmt.Println(hello)
-	// average.Average()
-	filepackage.CountFileUnits()
+
+	page_parser.ReadHtml()
 }
