@@ -3,10 +3,11 @@ package main
 import (
 
 	//"filepackage"
-	"page_parser"
+	//"page_parser"
+	"test_server"
 )
 
 func main(){
 
-	page_parser.ReadHtml()
+	test_server.Up()
 }

@@ -6,4 +6,5 @@ use ./search-replace-package
 use ./word-counter-package
 use ./file-package
 use ./page-parser-package
+use ./test-server-package
 use .
