@@ -4,10 +4,11 @@ import (
 
 	//"filepackage"
 	//"page_parser"
-	"test_server"
+	//"test_server"
+	"fetcher"
 )
 
 func main(){
 
-	test_server.Up()
+	fetcher.ComicsReader()
 }
