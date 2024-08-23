@@ -8,4 +8,5 @@ use ./file-package
 use ./page-parser-package
 use ./test-server-package
 use ./fetcher-package
+use ./interfaces-package
 use .
