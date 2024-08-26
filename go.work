@@ -9,4 +9,5 @@ use ./page-parser-package
 use ./test-server-package
 use ./fetcher-package
 use ./interfaces-package
+use ./data-server-package
 use .

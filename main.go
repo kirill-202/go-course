@@ -6,10 +6,10 @@ import (
 	//"page_parser"
 	//"test_server"
 	//"fetcher"
-	"test_interface"
+	"data_server"
 )
 
 func main(){
 
-	test_interface.TestInterface()
+	data_server.DataServer()
 }
