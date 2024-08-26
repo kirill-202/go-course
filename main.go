@@ -6,10 +6,10 @@ import (
 	//"page_parser"
 	//"test_server"
 	//"fetcher"
-	"data_server"
+	"csp"
 )
 
 func main(){
 
-	data_server.DataServer()
+	csp.PrimeFilter()
 }
