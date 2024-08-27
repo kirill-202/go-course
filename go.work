@@ -12,4 +12,5 @@ use ./interfaces-package
 use ./data-server-package
 use ./csp-package
 use ./select-test-package
+use ./race-condition-package
 use .
