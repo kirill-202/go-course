@@ -11,4 +11,5 @@ use ./fetcher-package
 use ./interfaces-package
 use ./data-server-package
 use ./csp-package
+use ./select-test-package
 use .

@@ -5,6 +5,7 @@ import (
 	"log"
 	"net/http"
 	"time"
+	"context"
 )
 
 type result struct {
@@ -14,10 +15,11 @@ type result struct {
 	status_code int
 }
 
-func get(url string, ch chan <- result) {
+func get(ctx context.Context, url string, ch chan <- result) {
 	start := time.Now()
+	req, _ := http.NewRequestWithContext(ctx, http.MethodGet, url, nil)
 
-	if response, err := http.Get(url); err != nil {
+	if response, err := http.DefaultClient.Do(req); err != nil {
 		ch <- result{url, err, 0, 500}
 	} else {
 		t := time.Since(start).Round(time.Millisecond)
@@ -33,11 +35,15 @@ func CSP() {
 		"https://lokalise.com",
 		"https://wsj.com",
 		"https://abra_google_lok.com",
+		"http://localhost:8080",
 
 	}
+	ctx, cancel := context.WithTimeout(context.Background(), 3* time.Second)
+
+	defer cancel()
 
 	for _, url := range list {
-		go get(url, results)
+		go get(ctx, url, results)
 	}
 
 	for range list {
@@ -50,6 +56,14 @@ func CSP() {
 		}
 	}
 }
+
+
+
+
+
+
+
+
 
 type nextCh chan int
 

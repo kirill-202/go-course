@@ -11,5 +11,5 @@ import (
 
 func main(){
 
-	csp.PrimeFilter()
+	csp.CSP()
 }
